@@ -1,0 +1,12 @@
+# environment.yml
+#
+#   conda environment configuration
+#
+name: genesis-project-env
+#
+dependencies:
+  - jupyter
+  - jupyterlab
+  - ipython
+  - ipykernel
+  - ipywidgets
