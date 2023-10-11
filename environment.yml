@@ -1,5 +1,4 @@
-###  auto-generated -- DO NOT EDIT!  ###
-prefix: ./env
+name: ./env
 channels:
   - conda-forge
 dependencies:
@@ -152,3 +151,6 @@ dependencies:
   - zeromq=4.3.4=h9c3ff4c_1
   - zipp=3.17.0=pyhd8ed1ab_0
   - zlib=1.2.13=hd590300_5
+  - pip:
+      - jupyterlab-quarto==0.2.8
+prefix: ./env
