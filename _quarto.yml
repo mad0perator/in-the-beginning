@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "."
+  title: "The Genesis Project"
   navbar:
     left:
       - href: index.qmd
@@ -15,5 +15,11 @@ format:
     css: styles.css
     toc: true
 
+editor:
+  markdown:
+    wrap: 72
+    references:
+      location: block
+      links: true
 
 
