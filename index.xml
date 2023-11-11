@@ -10,6 +10,625 @@
 <atom:link href="https://mad0perator.github.io/in-the-beginning/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Sat, 11 Nov 2023 10:50:42 GMT</lastBuildDate>
+<lastBuildDate>Fri, 24 Feb 2023 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>…there was \Pi</title>
+  <dc:creator>mad0perator </dc:creator>
+  <link>https://mad0perator.github.io/in-the-beginning/there-was-pi.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>A mythological investigation of Egyptian sermons, Biblical scripture as well as Babylonian and Sumerian excerpts led me to the hypothesis that Pi was encoded in the first chapter of Genesis.</p>
+<p>For this examination, we will focus only on demonstrable computations an observations with no conjectures or conclusions.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<section id="the-language" class="level3">
+<h3 class="anchored" data-anchor-id="the-language">The Language</h3>
+<p>Hebrew is an ancient Semitic language that has been spoken for over 3,000 years. It was originally written using a script known as <em>Paleo-Hebrew</em><sup>1</sup> which consisted of 22 letters and was used until around the 5<sup>th</sup> century BC. Hebrew was primarily a spoken language Israelites used to communicate to one another.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-semitic-tree" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-semitic-tree">flowchart TD
+  sem(Semitic)
+  sem --- arb(Arabic)
+  sem --- arc(Aramaic)
+  sem --- heb(Hebrew)
+  %% Arabic
+  arb --- eth(Ethiopic)
+  arb --- amh(Amharic)
+  %% Aramaic
+  arc --- syr(Syriac)
+  arc --- man(Mandaic)
+  arc --- chl(Chaldaic)
+  %% Hebrew
+  heb --- phx(Phoenician)
+  heb --- can(Canaanite)
+</pre>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;1: The Semitic Language Family</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="the-timeline" class="level3">
+<h3 class="anchored" data-anchor-id="the-timeline">The Timeline</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-timeline" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-timeline">timeline
+  title Brief History of Hebrew Writing
+  1000 BC : The Merneptah Stele - earliest known inscription written in Hebrew.
+  500 BC : The Paleo-Hebrew script is used in the writing of the Torah and other religious texts.
+  200 AD : Aramaic becomes the dominant language of the region and Hebrew usage declines.
+  1000 AD : Hebrew is still used as a liturgical language but is no longer spoken as a native language.
+  1700s AD : The Hebrew revival movement begins, led by figures such as Moses Mendelssohn and Eliezer Ben Yehuda.
+</pre>
+</div>
+<figcaption class="figure-caption">Figure&nbsp;2: Brief Timeline of Hebrew Writing</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="the-alphabet" class="level3">
+<h3 class="anchored" data-anchor-id="the-alphabet">The Alphabet</h3>
+<blockquote class="blockquote">
+<p><em>Aleph-Beyt</em></p>
+</blockquote>
+<section id="the-letters" class="level4">
+<h4 class="anchored" data-anchor-id="the-letters">The Letters</h4>
+<p>The <em>Paleo-Hebrew</em> script was a phonetic <em>abjad</em><sup>2</sup> used by the ancient Israelites before the adoption of the modern Hebrew (<em>Square</em>) script. It consists of 22 letters, all of which are consonants<sup>3</sup>. Like modern Hebrew, it is written from right to left. Influenced by Egyptian culture before the Exodus from enslavement, features from the hieroglyphs such as the use of the <em>acrophonic</em><sup>4</sup> principle as well as resemblance in some of the forms<sup>5</sup> are readily apparent. These letters are the basis for almost every written alphabet in use today, including the Latin script used in English writing.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In attempt to make this project more accessible, letters will be also transliterated into the Latin script (English letters) as well as the modern Hebrew script (as in the Torah) to allow the reader to get a sense of what the letters sound like.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-verse" class="level3">
+<h3 class="anchored" data-anchor-id="the-verse">The Verse</h3>
+<section id="𐤁𐤓𐤀𐤔𐤉𐤕-𐤁𐤓𐤀-𐤀𐤋𐤄𐤉𐤌-𐤀𐤕-𐤄𐤔𐤌𐤉𐤌-𐤅𐤀𐤕-𐤄𐤀𐤓𐤑" class="level4">
+<h4 class="anchored" data-anchor-id="𐤁𐤓𐤀𐤔𐤉𐤕-𐤁𐤓𐤀-𐤀𐤋𐤄𐤉𐤌-𐤀𐤕-𐤄𐤔𐤌𐤉𐤌-𐤅𐤀𐤕-𐤄𐤀𐤓𐤑">𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑</h4>
+<blockquote class="blockquote">
+<dl>
+<dt>In the beginning God created the heavens and the earth.</dt>
+<dd>
+Genesis 1:1
+</dd>
+</dl>
+</blockquote>
+<p>Opening a Torah today, you will be presented with modern Hebrew script:</p>
+<blockquote class="blockquote">
+<p>בראשית ברא אלהים את השמים ואת הארץ</p>
+</blockquote>
+<p>Using only the Latin script that English speakers are familiar with this might read something like the following:</p>
+<blockquote class="blockquote">
+<p>BRASYT BRA ALHYM AT HSMYM VAT HARZ</p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Reminder</em>: Vowels are not written. The written ‘A’ is not a vowel.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="procedure" class="level2">
+<h2 class="anchored" data-anchor-id="procedure">Procedure</h2>
+<ol type="1">
+<li>Split the verse into words.</li>
+<li>Join the words into a string of letters</li>
+<li>Multiply the number of letters and the values of each of the letters to calculate the numerator.</li>
+<li>Multiply the number of words and the sum of the values of the letters of each word to calculate the denominator.</li>
+<li>The ratio of the numerator / denominator is <strong>an accurate approximation of <img src="https://latex.codecogs.com/png.latex?%5Cpi"></strong>.</li>
+</ol>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> math <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> prod, pi</span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#from rich import print</span></span>
+<span id="cb1-3"></span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> forms() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>:</span>
+<span id="cb1-6">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb1-7"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Return a string of all the Paleo-Hebrew `forms`.</span></span>
+<span id="cb1-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb1-9">    start <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bn" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0x10900</span></span>
+<span id="cb1-10">    stop <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> start <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">22</span></span>
+<span id="cb1-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">''</span>.join(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">chr</span>(ordinal) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> ordinal <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(start, stop))</span>
+<span id="cb1-12"></span>
+<span id="cb1-13"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> listvalues() <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>]:</span>
+<span id="cb1-14">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb1-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    List the values of the Paleo-Hebrew letters.</span></span>
+<span id="cb1-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb1-17">    ones <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>))</span>
+<span id="cb1-18">    tens <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>))</span>
+<span id="cb1-19">    hundreds <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">range</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1000</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>))</span>
+<span id="cb1-20">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> ones <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> tens <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> hundreds</span>
+<span id="cb1-21"></span>
+<span id="cb1-22"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> evaluate(form: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb1-23">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb1-24"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Return value of `form`.</span></span>
+<span id="cb1-25"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb1-26">    values <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>(forms()), listvalues()))</span>
+<span id="cb1-27">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> values.get(form)</span>
+<span id="cb1-28"></span>
+<span id="cb1-29"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> wordsum(word: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb1-30">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb1-31"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Sum the values of letters in `word`.</span></span>
+<span id="cb1-32"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb1-33">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(evaluate(letter) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> letter <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> word)</span>
+<span id="cb1-34"></span>
+<span id="cb1-35"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> letterproduct(letters: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb1-36">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb1-37"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Calculate the product of the letters.</span></span>
+<span id="cb1-38"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb1-39">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> prod(evaluate(letter) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> letter <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> letters) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(letters)</span>
+<span id="cb1-40"></span>
+<span id="cb1-41"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> wordproduct(words: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>[<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>]) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">int</span>:</span>
+<span id="cb1-42">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">"""</span></span>
+<span id="cb1-43"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    Calculate the product of the words.</span></span>
+<span id="cb1-44"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">    """</span></span>
+<span id="cb1-45">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> prod(wordsum(word) <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> word <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> words) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(words)</span></code></pre></div>
+</details>
+</section>
+<section id="output" class="level2">
+<h2 class="anchored" data-anchor-id="output">Output</h2>
+<section id="define-verse." class="level3">
+<h3 class="anchored" data-anchor-id="define-verse.">Define verse.</h3>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">VERSE <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑'</span></span>
+<span id="cb2-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>VERSE<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">**'</span>)</span></code></pre></div>
+</details>
+<p><strong>𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑</strong></p>
+</section>
+<section id="split-verse-into-words." class="level3">
+<h3 class="anchored" data-anchor-id="split-verse-into-words.">Split verse into words.</h3>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">words <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> VERSE.split()</span>
+<span id="cb3-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'There are **</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(words)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">** words in the verse.'</span>)</span></code></pre></div>
+</details>
+<p>There are <strong>7</strong> words in the verse.</p>
+</section>
+<section id="string-together-all-the-letters-in-the-verse." class="level3">
+<h3 class="anchored" data-anchor-id="string-together-all-the-letters-in-the-verse.">String together all the letters in the verse.</h3>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">letters <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">''</span>.join(words)</span>
+<span id="cb4-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'There are **</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">len</span>(letters)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">** letters in the verse.'</span>)</span></code></pre></div>
+</details>
+<p>There are <strong>28</strong> letters in the verse.</p>
+</section>
+<section id="make-a-table-with-the-letters-and-their-corresponding-values." class="level3">
+<h3 class="anchored" data-anchor-id="make-a-table-with-the-letters-and-their-corresponding-values.">Make a table with the letters and their corresponding values.</h3>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">values <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">dict</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">zip</span>(<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">list</span>(forms()), listvalues()))</span></code></pre></div>
+</details>
+</section>
+<section id="calculate-the-numerator." class="level3">
+<h3 class="anchored" data-anchor-id="calculate-the-numerator.">Calculate the numerator.</h3>
+<p><img src="https://latex.codecogs.com/png.latex?Q_%7BN%7D"> : numerator</p>
+<p><img src="https://latex.codecogs.com/png.latex?n_%7BL%7D"> : number of letters</p>
+<p><img src="https://latex.codecogs.com/png.latex?l_%7Bn%7D"> : letter value</p>
+<p><img src="https://latex.codecogs.com/png.latex?Q_%7BN%7D%20=%20n_%7BL%7D%20l_%7B1%7D%20l_%7B2%7D%20l_%7B3%7D%20...%20l_%7Bn%7D"></p>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">numerator <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> letterproduct(letters)</span>
+<span id="cb6-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>numerator<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">**'</span>)</span></code></pre></div>
+</details>
+<p><strong>668860416000000000000000000000000000</strong></p>
+</section>
+<section id="calculate-the-denominator." class="level3">
+<h3 class="anchored" data-anchor-id="calculate-the-denominator.">Calculate the denominator.</h3>
+<p><img src="https://latex.codecogs.com/png.latex?Q_%7BD%7D"> : denominator</p>
+<p><img src="https://latex.codecogs.com/png.latex?n_%7BW%7D"> : number of words</p>
+<p><img src="https://latex.codecogs.com/png.latex?W_%7Bn%7D"> : sum of letter values of word</p>
+<p><img src="https://latex.codecogs.com/png.latex?Q_%7BD%7D%20=%20n_%7BW%7DW_%7B1%7D%20W_%7B2%7D%20W_%7B3%7D%20...%20W_%7Bn%7D"></p>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">denominator <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> wordproduct(words)</span>
+<span id="cb7-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>denominator<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">**'</span>)</span></code></pre></div>
+</details>
+<p><strong>2129074680489230320</strong></p>
+</section>
+<section id="calculate-the-quotient-as-the-17th-power." class="level3">
+<h3 class="anchored" data-anchor-id="calculate-the-quotient-as-the-17th-power.">Calculate the quotient as the <strong>17<sup>th</sup></strong> power.</h3>
+<p><img src="https://latex.codecogs.com/png.latex?Q%20=%20%5Cfrac%7BQ_%7BN%7D%7D%7BQ_%7BD%7D%7D"></p>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1">result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> numerator <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> denominator <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1E17</span></span>
+<span id="cb8-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'Q = **</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>result<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">**'</span>)</span></code></pre></div>
+</details>
+<p>Q = <strong>3.1415545078310996</strong></p>
+</section>
+<section id="calculate-the-percentage-of-error." class="level3">
+<h3 class="anchored" data-anchor-id="calculate-the-percentage-of-error.">Calculate the percentage of error.</h3>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1">error <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> pi) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> pi</span>
+<span id="cb9-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>error<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">%** ~ </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>pi<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'</span>)</span></code></pre></div>
+</details>
+<p><strong>-0.0012142172108135655%</strong> ~ 3.141592653589793</p>
+</section>
+</section>
+<section id="observations" class="level2">
+<h2 class="anchored" data-anchor-id="observations">Observations</h2>
+<ul>
+<li><p>There are <strong>22</strong> letters in the Hebrew alphabet.</p></li>
+<li><p>There are <strong>7</strong> words in the verse.</p></li>
+<li><p><strong><img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B22%7D%7B7%7D"></strong> is also an approximation of <img src="https://latex.codecogs.com/png.latex?%5Cpi">.</p></li>
+<li><p>The Greek character denoting <img src="https://latex.codecogs.com/png.latex?%5Cpi"> comes directly from the Hebrew letter <em>Pe</em>.</p></li>
+<li><p><em>Pe</em> is the <strong>17<sup>th</sup></strong> letter signifying “mouth”, “corner”</p></li>
+<li><p>The resulting computation is to the <strong>17<sup>th</sup></strong> power of 10.</p></li>
+<li><p>There are <strong>28</strong> letters in the verse.</p></li>
+<li><p><strong>28</strong> is the <strong>7<sup>th</sup></strong> triangular number.</p></li>
+<li><p>There are <strong>28</strong> zeroes in the numerator.</p></li>
+<li><p>Number of letters in the first 3 words: <strong>14</strong></p></li>
+<li><p>Number of letters in the last 4 words: <strong>14</strong></p></li>
+<li><p>Number of letters in the 4<sup>th</sup> and 5<sup>th</sup> words: <strong>7</strong></p></li>
+<li><p>Number of letters in the 6<sup>th</sup> and 7<sup>th</sup> words: <strong>7</strong></p></li>
+<li><p>Number of letters in the keywords meaning “God”, “heaven”, “earth”: <strong>14</strong></p></li>
+<li><p>Sum of the keywords: 86 + 395 + 296 = <strong>777</strong></p></li>
+<li><p>Factors for the sum of the word meaning “created”:<br>
+<img src="https://latex.codecogs.com/png.latex?2+200+1=203="> <strong><img src="https://latex.codecogs.com/png.latex?7*29"></strong></p></li>
+<li><p>Factors for the sum of the first and last letters of all <strong>7</strong> words:<br>
+<img src="https://latex.codecogs.com/png.latex?402+3+401+45+406+95=1393="> <strong><img src="https://latex.codecogs.com/png.latex?7*199"></strong></p></li>
+<li><p>Factors for the sum of the first and last letters of the first and last word: <img src="https://latex.codecogs.com/png.latex?402+95=497="> <strong><img src="https://latex.codecogs.com/png.latex?7*71"></strong></p></li>
+</ul>
+<p><strong><em>To be continued …</em></strong></p>
+
+
+<!-- -->
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>also known as <em>Biblical Hebrew</em> or <em>Old Hebrew</em>.↩︎</p></li>
+<li id="fn2"><p>explicitly, each letter represents a consonant, vowels are inferred from the context↩︎</p></li>
+<li id="fn3"><p>literally, <em>sounding together</em>↩︎</p></li>
+<li id="fn4"><p>a letter is named after a spoken word representing a common object which is written as the first initial of that sound (“A” is for “Apple”)↩︎</p></li>
+<li id="fn5"><p>visible shape as it is written↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://mad0perator.github.io/in-the-beginning/there-was-pi.html</guid>
+  <pubDate>Fri, 24 Feb 2023 05:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
