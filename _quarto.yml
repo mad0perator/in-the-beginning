@@ -1,9 +1,14 @@
 project:
   type: website
+  render:
+    - about.qmd
+    - index.qmd
+    - there-was-pi.qmd
+    - 404.qmd
 
 website:
   title: "in-the-beginning"
-  site-url: https://mad0perator.github.io/in-the-beginning.html
+  site-url: https://mad0perator.github.io/in-the-beginning
   navbar:
     left:
       - href: index.qmd
@@ -35,6 +40,7 @@ format:
     page-layout: full
     css: styles.css
     toc: true
+    html-math-method: katex
 
 editor:
   markdown:

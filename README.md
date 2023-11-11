@@ -8,6 +8,9 @@ An examination of the Genesis with Jupyter Lab
 
 Calculate Pi from the first verse of the Bible.
 
-Click the *launch Binder* badge to start the interactive Jupyter Lab notebook in your browser.
+View this repo as a [website][doc] or click the *launch Binder* badge
+above to start the interactive Jupyter Lab notebook in your browser.
 
+
+[doc]: https://mad0perator.github.io/in-the-beginning "Website"
 
