@@ -36,7 +36,9 @@ website:
 
 format:
   html:
-    theme: zephyr
+    theme:
+      light: flatly
+      dark: cyborg
     code-fold: true
     code-tools: true
     page-layout: full
