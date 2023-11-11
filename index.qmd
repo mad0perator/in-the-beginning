@@ -4,7 +4,7 @@ listing:
   type: table
   #sort: "date desc"
   contents: 
-    - there_was_pi.qmd
+    - there-was-pi.qmd
   #categories: cloud
   feed: true
 
