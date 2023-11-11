@@ -94,6 +94,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="in-the-beginning - About">
@@ -132,6 +148,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./there-was-pi.html" rel="" target="">
+ <span class="menu-text">…there was <span class="math inline">\Pi</span></span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
     <a href="https://twitter.com/@null_space" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
@@ -168,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p><em><a href="./">In the Beginning…</a></em> is an app providing an interactive exploration in the Book of Genesis to demonstrate my findings in an open, reproducible and accessible manner. The project uses a <a href="https://jupyterlab.readthedocs.io/en/latest/">JupyterLab</a> <a href="?var:about.conda">conda</a> environment written with <a href="https://quarto.org/about">Quarto</a> markdown to publish on <a href="https://docs.github.com/en/pages">GitHub Pages</a>.</p>
+<p><em><a href="./">In the Beginning…</a></em> is an app providing an interactive exploration in the Book of Genesis to demonstrate my findings in an open, reproducible and accessible manner. The project uses a <a href="https://jupyterlab.readthedocs.io/en/latest/">JupyterLab</a> <a href="https://www.anaconda.com/about-us">conda</a> environment written with <a href="https://quarto.org/about">Quarto</a> markdown to publish on <a href="https://docs.github.com/en/pages">GitHub Pages</a>.</p>
 
 
 <!-- -->
