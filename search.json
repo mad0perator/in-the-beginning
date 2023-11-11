@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "In the Beginning…",
+    "section": "",
+    "text": "An interactive exploration in Genesis\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "In the Beginning… is an app providing an interactive exploration in the Book of Genesis to demonstrate my findings in an open, reproducible and accessible manner. The project uses a JupyterLab conda environment written with Quarto markdown to publish on GitHub Pages."
+  },
+  {
+    "objectID": "there-was-pi.html",
+    "href": "there-was-pi.html",
+    "title": "…there was \\Pi",
+    "section": "",
+    "text": "A mythological investigation of Egyptian sermons, Biblical scripture as well as Babylonian and Sumerian excerpts led me to the hypothesis that Pi was encoded in the first chapter of Genesis.\nFor this examination, we will focus only on demonstrable computations an observations with no conjectures or conclusions."
+  },
+  {
+    "objectID": "there-was-pi.html#background",
+    "href": "there-was-pi.html#background",
+    "title": "…there was \\Pi",
+    "section": "Background",
+    "text": "Background\n\nThe Language\nHebrew is an ancient Semitic language that has been spoken for over 3,000 years. It was originally written using a script known as Paleo-Hebrew1 which consisted of 22 letters and was used until around the 5th century BC. Hebrew was primarily a spoken language Israelites used to communicate to one another.\n\n\n\n\n\nflowchart TD\n  sem(Semitic)\n  sem --- arb(Arabic)\n  sem --- arc(Aramaic)\n  sem --- heb(Hebrew)\n  %% Arabic\n  arb --- eth(Ethiopic)\n  arb --- amh(Amharic)\n  %% Aramaic\n  arc --- syr(Syriac)\n  arc --- man(Mandaic)\n  arc --- chl(Chaldaic)\n  %% Hebrew\n  heb --- phx(Phoenician)\n  heb --- can(Canaanite)\n\n\nFigure 1: The Semitic Language Family\n\n\n\n\n\n\nThe Timeline\n\n\n\n\n\ntimeline\n  title Brief History of Hebrew Writing\n  1000 BC : The Merneptah Stele - earliest known inscription written in Hebrew.\n  500 BC : The Paleo-Hebrew script is used in the writing of the Torah and other religious texts.\n  200 AD : Aramaic becomes the dominant language of the region and Hebrew usage declines.\n  1000 AD : Hebrew is still used as a liturgical language but is no longer spoken as a native language.\n  1700s AD : The Hebrew revival movement begins, led by figures such as Moses Mendelssohn and Eliezer Ben Yehuda.\n\n\nFigure 2: Brief Timeline of Hebrew Writing\n\n\n\n\n\n\nThe Alphabet\n\nAleph-Beyt\n\n\nThe Letters\nThe Paleo-Hebrew script was a phonetic abjad2 used by the ancient Israelites before the adoption of the modern Hebrew (Square) script. It consists of 22 letters, all of which are consonants3. Like modern Hebrew, it is written from right to left. Influenced by Egyptian culture before the Exodus from enslavement, features from the hieroglyphs such as the use of the acrophonic4 principle as well as resemblance in some of the forms5 are readily apparent. These letters are the basis for almost every written alphabet in use today, including the Latin script used in English writing.\n\n\n\n\n\n\nNote\n\n\n\nIn attempt to make this project more accessible, letters will be also transliterated into the Latin script (English letters) as well as the modern Hebrew script (as in the Torah) to allow the reader to get a sense of what the letters sound like.\n\n\n\n\n\nThe Verse\n\n𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑\n\n\nIn the beginning God created the heavens and the earth.\n\nGenesis 1:1\n\n\n\nOpening a Torah today, you will be presented with modern Hebrew script:\n\nבראשית ברא אלהים את השמים ואת הארץ\n\nUsing only the Latin script that English speakers are familiar with this might read something like the following:\n\nBRASYT BRA ALHYM AT HSMYM VAT HARZ\n\n\n\n\n\n\n\nNote\n\n\n\nReminder: Vowels are not written. The written ‘A’ is not a vowel."
+  },
+  {
+    "objectID": "there-was-pi.html#procedure",
+    "href": "there-was-pi.html#procedure",
+    "title": "…there was \\Pi",
+    "section": "Procedure",
+    "text": "Procedure\n\nSplit the verse into words.\nJoin the words into a string of letters\nMultiply the number of letters and the values of each of the letters to calculate the numerator.\nMultiply the number of words and the sum of the values of the letters of each word to calculate the denominator.\nThe ratio of the numerator / denominator is an accurate approximation of \\pi.\n\n\nCode\nfrom math import prod, pi\n#from rich import print\n\n\ndef forms() -&gt; str:\n    \"\"\"\n    Return a string of all the Paleo-Hebrew `forms`.\n    \"\"\"\n    start = 0x10900\n    stop = start + 22\n    return ''.join(chr(ordinal) for ordinal in range(start, stop))\n\ndef listvalues() -&gt; list[int]:\n    \"\"\"\n    List the values of the Paleo-Hebrew letters.\n    \"\"\"\n    ones = list(range(1, 10))\n    tens = list(range(10, 100, 10))\n    hundreds = list(range(100, 1000, 100))\n    return ones + tens + hundreds\n\ndef evaluate(form: str) -&gt; int:\n    \"\"\"\n    Return value of `form`.\n    \"\"\"\n    values = dict(zip(list(forms()), listvalues()))\n    return values.get(form)\n\ndef wordsum(word: str) -&gt; int:\n    \"\"\"\n    Sum the values of letters in `word`.\n    \"\"\"\n    return sum(evaluate(letter) for letter in word)\n\ndef letterproduct(letters: str) -&gt; int:\n    \"\"\"\n    Calculate the product of the letters.\n    \"\"\"\n    return prod(evaluate(letter) for letter in letters) * len(letters)\n\ndef wordproduct(words: list[str]) -&gt; int:\n    \"\"\"\n    Calculate the product of the words.\n    \"\"\"\n    return prod(wordsum(word) for word in words) * len(words)"
+  },
+  {
+    "objectID": "there-was-pi.html#output",
+    "href": "there-was-pi.html#output",
+    "title": "…there was \\Pi",
+    "section": "Output",
+    "text": "Output\n\nDefine verse.\n\nCode\nVERSE = '𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑'\nprint(f'**{VERSE}**')\n\n𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑\n\n\nSplit verse into words.\n\nCode\nwords = VERSE.split()\nprint(f'There are **{len(words)}** words in the verse.')\n\nThere are 7 words in the verse.\n\n\nString together all the letters in the verse.\n\nCode\nletters = ''.join(words)\nprint(f'There are **{len(letters)}** letters in the verse.')\n\nThere are 28 letters in the verse.\n\n\nMake a table with the letters and their corresponding values.\n\nCode\nvalues = dict(zip(list(forms()), listvalues()))\n\n\n\nCalculate the numerator.\nQ_{N} : numerator\nn_{L} : number of letters\nl_{n} : letter value\nQ_{N} = n_{L} l_{1} l_{2} l_{3} ... l_{n}\n\nCode\nnumerator = letterproduct(letters)\nprint(f'**{numerator}**')\n\n668860416000000000000000000000000000\n\n\nCalculate the denominator.\nQ_{D} : denominator\nn_{W} : number of words\nW_{n} : sum of letter values of word\nQ_{D} = n_{W}W_{1} W_{2} W_{3} ... W_{n}\n\nCode\ndenominator = wordproduct(words)\nprint(f'**{denominator}**')\n\n2129074680489230320\n\n\nCalculate the quotient as the 17th power.\nQ = \\frac{Q_{N}}{Q_{D}}\n\nCode\nresult = numerator / denominator / 1E17\nprint(f'Q = **{result}**')\n\nQ = 3.1415545078310996\n\n\nCalculate the percentage of error.\n\nCode\nerror = (result - pi) * 100 / pi\nprint(f'**{error}%** ~ {pi}')\n\n-0.0012142172108135655% ~ 3.141592653589793"
+  },
+  {
+    "objectID": "there-was-pi.html#observations",
+    "href": "there-was-pi.html#observations",
+    "title": "…there was \\Pi",
+    "section": "Observations",
+    "text": "Observations\n\nThere are 22 letters in the Hebrew alphabet.\nThere are 7 words in the verse.\n\\frac{22}{7} is also an approximation of \\pi.\nThe Greek character denoting \\pi comes directly from the Hebrew letter Pe.\nPe is the 17th letter signifying “mouth”, “corner”\nThe resulting computation is to the 17th power of 10.\nThere are 28 letters in the verse.\n28 is the 7th triangular number.\nThere are 28 zeroes in the numerator.\nNumber of letters in the first 3 words: 14\nNumber of letters in the last 4 words: 14\nNumber of letters in the 4th and 5th words: 7\nNumber of letters in the 6th and 7th words: 7\nNumber of letters in the keywords meaning “God”, “heaven”, “earth”: 14\nSum of the keywords: 86 + 395 + 296 = 777\nFactors for the sum of the word meaning “created”:\n2+200+1=203= 7*29\nFactors for the sum of the first and last letters of all 7 words:\n402+3+401+45+406+95=1393= 7*199\nFactors for the sum of the first and last letters of the first and last word: 402+95=497= 7*71\n\nTo be continued …"
+  },
+  {
+    "objectID": "there-was-pi.html#footnotes",
+    "href": "there-was-pi.html#footnotes",
+    "title": "…there was \\Pi",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nalso known as Biblical Hebrew or Old Hebrew.↩︎\nexplicitly, each letter represents a consonant, vowels are inferred from the context↩︎\nliterally, sounding together↩︎\na letter is named after a spoken word representing a common object which is written as the first initial of that sound (“A” is for “Apple”)↩︎\nvisible shape as it is written↩︎"
+  }
+]
