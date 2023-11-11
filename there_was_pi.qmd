@@ -1,0 +1,264 @@
+---
+title: ...there was $\Pi$
+author: mad0perator
+email: mad0perator.creationlounge@gmail.com
+repo: 'https://github.com/mad0perator/in-the-beginning'
+date: 'February 24, 2023'
+version: 0.0.1
+jupyter: python3
+execute:
+  output: asis
+---
+
+A mythological investigation of Egyptian sermons, Biblical scripture
+as well as Babylonian and Sumerian excerpts led me to the hypothesis that
+Pi was encoded in the first chapter of Genesis.
+
+For this examination, we will focus only on demonstrable computations an observations with no conjectures or conclusions.
+
+
+Background
+----------
+
+### The Language
+
+Hebrew is an ancient Semitic language that has been spoken for over 3,000 years. It was originally written using a script known as *Paleo-Hebrew*[^ph] which consisted of 22 letters and was used until around the 5^th^ century BC. Hebrew was primarily a spoken language Israelites used to communicate to one another.
+
+```{mermaid}
+%%| label: fig-semitic-tree
+%%| fig-cap: "The Semitic Language Family"
+flowchart TD
+  sem(Semitic)
+  sem --- arb(Arabic)
+  sem --- arc(Aramaic)
+  sem --- heb(Hebrew)
+  %% Arabic
+  arb --- eth(Ethiopic)
+  arb --- amh(Amharic)
+  %% Aramaic
+  arc --- syr(Syriac)
+  arc --- man(Mandaic)
+  arc --- chl(Chaldaic)
+  %% Hebrew
+  heb --- phx(Phoenician)
+  heb --- can(Canaanite)
+```
+
+[^ph]: also known as *Biblical Hebrew* or *Old Hebrew*.
+
+
+### The Timeline
+
+```{mermaid}
+%%| label: fig-timeline
+%%| fig-cap: "Brief Timeline of Hebrew Writing"
+timeline
+  title Brief History of Hebrew Writing
+  1000 BC : The Merneptah Stele - earliest known inscription written in Hebrew.
+  500 BC : The Paleo-Hebrew script is used in the writing of the Torah and other religious texts.
+  200 AD : Aramaic becomes the dominant language of the region and Hebrew usage declines.
+  1000 AD : Hebrew is still used as a liturgical language but is no longer spoken as a native language.
+  1700s AD : The Hebrew revival movement begins, led by figures such as Moses Mendelssohn and Eliezer Ben Yehuda.
+```
+
+
+### The Alphabet
+
+> *Aleph-Beyt*
+
+#### The Letters
+
+The *Paleo-Hebrew* script was a phonetic *abjad*[^ab] used by the ancient Israelites before the adoption of the modern Hebrew (*Square*) script. It consists of 22 letters, all of which are consonants[^c]. Like modern Hebrew, it is written from right to left. Influenced by Egyptian culture before the Exodus from enslavement, features from the hieroglyphs such as the use of the *acrophonic*[^ac] principle as well as resemblance in some of the forms[^f] are readily apparent. These letters are the basis for almost every written alphabet in use today, including the Latin script used in English writing.
+
+:::{.callout-note}
+In attempt to make this project more accessible, letters will be also transliterated into the Latin script (English letters) as well as the modern Hebrew script (as in the Torah) to allow the reader to get a sense of what the letters sound like.
+:::
+
+[^ab]: explicitly, each letter represents a consonant, vowels are inferred from the context
+[^ac]: a letter is named after a spoken word representing a common object which is written as the first initial of that sound ("A" is for "Apple")
+[^c]: literally, *sounding together*
+[^f]: visible shape as it is written
+
+
+### The Verse
+
+#### 𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑
+
+>In the beginning God created the heavens and the earth.
+>~ Genesis 1:1
+
+Opening a Torah today, you will be presented with modern Hebrew script:
+
+>בראשית ברא אלהים את השמים ואת הארץ
+
+Using only the Latin script that English speakers are familiar with this might read something like the following:
+
+>BRASYT BRA ALHYM AT HSMYM VAT HARZ
+
+:::{.callout-note}
+*Reminder*: Vowels are not written. The written 'A' is not a vowel.
+:::
+
+
+Procedure
+---------
+
+1. Split the verse into words.
+2. Join the words into a string of letters
+3. Multiply the number of letters and the values of each of the letters to calculate the numerator.
+4. Multiply the number of words and the sum of the values of the letters of each word to calculate the denominator.
+5. The ratio of the numerator / denominator is **an accurate approximation of $\pi$**.
+
+```{python}
+#| label: code-functions
+from math import prod, pi
+#from rich import print
+
+
+def forms() -> str:
+    """
+    Return a string of all the Paleo-Hebrew `forms`.
+    """
+    start = 0x10900
+    stop = start + 22
+    return ''.join(chr(ordinal) for ordinal in range(start, stop))
+
+def listvalues() -> list[int]:
+    """
+    List the values of the Paleo-Hebrew letters.
+    """
+    ones = list(range(1, 10))
+    tens = list(range(10, 100, 10))
+    hundreds = list(range(100, 1000, 100))
+    return ones + tens + hundreds
+
+def evaluate(form: str) -> int:
+    """
+    Return value of `form`.
+    """
+    values = dict(zip(list(forms()), listvalues()))
+    return values.get(form)
+
+def wordsum(word: str) -> int:
+    """
+    Sum the values of letters in `word`.
+    """
+    return sum(evaluate(letter) for letter in word)
+
+def letterproduct(letters: str) -> int:
+    """
+    Calculate the product of the letters.
+    """
+    return prod(evaluate(letter) for letter in letters) * len(letters)
+
+def wordproduct(words: list[str]) -> int:
+    """
+    Calculate the product of the words.
+    """
+    return prod(wordsum(word) for word in words) * len(words)
+```
+
+
+Output
+------
+
+### Define verse.
+
+```{python}
+VERSE = '𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑'
+print(f'**{VERSE}**')
+```
+
+### Split verse into words.
+
+```{python}
+words = VERSE.split()
+print(f'There are **{len(words)}** words in the verse.')
+```
+
+### String together all the letters in the verse.
+
+```{python}
+letters = ''.join(words)
+print(f'There are **{len(letters)}** letters in the verse.')
+```
+
+### Make a table with the letters and their corresponding values.
+
+```{python}
+values = dict(zip(list(forms()), listvalues()))
+```
+
+### Calculate the numerator.
+
+$Q_{N}$ : numerator
+
+$n_{L}$ : number of letters
+
+$l_{n}$ : letter value
+
+$$Q_{N} = n_{L} l_{1} l_{2} l_{3} ... l_{n}$$
+
+```{python}
+numerator = letterproduct(letters)
+print(f'**{numerator}**')
+```
+
+### Calculate the denominator.
+
+$Q_{D}$ : denominator
+
+$n_{W}$ : number of words
+
+$W_{n}$ : sum of letter values of word 
+
+$$Q_{D} = n_{W}W_{1} W_{2} W_{3} ... W_{n}$$
+
+```{python}
+denominator = wordproduct(words)
+print(f'**{denominator}**')
+```
+
+### Calculate the quotient as the **17^th^** power.
+
+$$Q = \frac{Q_{N}}{Q_{D}}$$
+
+```{python}
+result = numerator / denominator / 1E17
+print(f'Q = **{result}**')
+```
+
+### Calculate the percentage of error.
+
+```{python}
+error = (result - pi) * 100 / pi
+print(f'**{error}%** ~ {pi}')
+```
+
+## Observations
+
+- There are **22** letters in the Hebrew alphabet.
+- There are **7** words in the verse.
+- **$\frac{22}{7}$** is also an approximation of $\pi$.
+- The Greek character denoting $\pi$ comes directly from the Hebrew letter *Pe*.
+- *Pe* is the **17^th^** letter signifying "mouth", "corner"
+- The resulting computation is to the **17^th^** power of 10.
+- There are **28** letters in the verse.
+- **28** is the **7^th^** triangular number.
+- There are **28** zeroes in the numerator.
+
+- Number of letters in the first 3 words: **14**
+- Number of letters in the last 4 words: **14**
+- Number of letters in the 4^th^ and 5^th^ words: **7**
+- Number of letters in the 6^th^ and 7^th^ words: **7**
+- Number of letters in the keywords meaning "God", "heaven", "earth": **14**
+- Sum of the keywords: 86 + 395 + 296 = **777**
+- Factors for the sum of the word meaning "created":  
+  $2+200+1=203=$ **$7*29$**
+- Factors for the sum of the first and last letters of all **7** words:  
+  $402+3+401+45+406+95=1393=$ **$7*199$**
+- Factors for the sum of the first and last letters of the first and last    word: $402+95=497=$ **$7*71$**
+  
+
+***To be continued ...***
+

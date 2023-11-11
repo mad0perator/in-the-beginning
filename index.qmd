@@ -1,10 +1,13 @@
 ---
-title: "."
+title: "{{< var site.title >}}"
+listing: 
+  type: table
+  #sort: "date desc"
+  contents: 
+    - there_was_pi.qmd
+  #categories: cloud
+  feed: true
+
 ---
 
-This is a Quarto website.
-
-This website is written using [Quarto][websites] 
-
-
-[websites]: https://quarto.org/docs/websites "Quarto website docs"
+> An interactive exploration in Genesis

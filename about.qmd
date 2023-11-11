@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-{{< var website.title >}} is an app providing an interactive exploration in the Book of Genesis to demonstrate my findings in an open and accessible manner. The project uses a JupyterLab environment written with Quarto markdown to publish with GitHub Pages.
+*[{{< var site.title >}}](./)* is an app providing an interactive exploration in the Book of Genesis to demonstrate my findings in an open, reproducible and accessible manner. The project uses a [JupyterLab]({{< var about.jlab >}}) [conda]({{< var about.conda >}}) environment written with [Quarto]({{< var about.quarto >}}) markdown to publish on [GitHub Pages]({{< var about.ghpages >}}).

@@ -1,0 +1,11 @@
+# _variables.yml
+#
+#   user project variable definitions
+#
+site:
+  title: "In the Beginning..."
+about:
+  quarto: "https://quarto.org/about"
+  jlab: "https://jupyterlab.readthedocs.io/en/latest/"
+  ghpages: "https://docs.github.com/en/pages"
+  websites: "https://quarto.org/docs/websites"
