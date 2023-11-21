@@ -2,8 +2,9 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - jupyterlab
+  - jupyterlab=4.0.9
   - rich
+  - pip=23.3.*
   - pip:
     - jupyterlab-quarto
   
