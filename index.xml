@@ -9,7 +9,7 @@
 <link>https://mad0perator.github.io/in-the-beginning/</link>
 <atom:link href="https://mad0perator.github.io/in-the-beginning/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.4.420</generator>
+<generator>quarto-1.4.553</generator>
 <lastBuildDate>Fri, 24 Feb 2023 05:00:00 GMT</lastBuildDate>
 <item>
   <title>…there was \Pi</title>
@@ -21,15 +21,15 @@
 
 
 <p>A mythological investigation of Egyptian sermons, Biblical scripture as well as Babylonian and Sumerian excerpts led me to the hypothesis that Pi was encoded in the first chapter of Genesis.</p>
-<p>For this examination, we will focus only on demonstrable computations an observations with no conjectures or conclusions.</p>
+<p>For this examination, we will focus only on demonstrable computations and observations with no conjectures or conclusions.</p>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
 <section id="the-language" class="level3">
 <h3 class="anchored" data-anchor-id="the-language">The Language</h3>
 <p>Hebrew is an ancient Semitic language that has been spoken for over 3,000 years. It was originally written using a script known as <em>Paleo-Hebrew</em><sup>1</sup> which consisted of 22 letters and was used until around the 5<sup>th</sup> century BC. Hebrew was primarily a spoken language Israelites used to communicate to one another.</p>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
-<div id="fig-semitic-tree" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-semitic-tree" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-semitic-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
@@ -51,7 +51,7 @@
 </pre>
 </div>
 </div>
-<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-semitic-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-semitic-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: The Semitic Language Family
 </figcaption>
 </figure>
@@ -61,9 +61,9 @@ Figure&nbsp;1: The Semitic Language Family
 </section>
 <section id="the-timeline" class="level3">
 <h3 class="anchored" data-anchor-id="the-timeline">The Timeline</h3>
-<div class="cell">
+<div class="cell" data-layout-align="default">
 <div class="cell-output-display">
-<div id="fig-timeline" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-timeline" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div>
@@ -77,7 +77,7 @@ Figure&nbsp;1: The Semitic Language Family
 </pre>
 </div>
 </div>
-<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Brief Timeline of Hebrew Writing
 </figcaption>
 </figure>
@@ -153,16 +153,21 @@ Note
 <li>Multiply the number of words and the sum of the values of the letters of each word to calculate the denominator.</li>
 <li>The ratio of the numerator / denominator is <strong>an accurate approximation of <img src="https://latex.codecogs.com/png.latex?%5Cpi"></strong>.</li>
 </ol>
-<details>
+<div id="code-functions" class="cell" data-execution_count="1">
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">from</span> math <span class="im" style="color: #00769E;
 background-color: null;
 font-style: inherit;">import</span> prod, pi</span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+<span id="cb1-2"><span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">#from rich import print</span></span>
+font-style: inherit;">from</span> rich <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span></span>
 <span id="cb1-3"></span>
 <span id="cb1-4"></span>
 <span id="cb1-5"><span class="kw" style="color: #003B4F;
@@ -391,12 +396,13 @@ font-style: inherit;">*</span> <span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">len</span>(words)</span></code></pre></div>
 </details>
+</div>
 </section>
 <section id="output" class="level2">
 <h2 class="anchored" data-anchor-id="output">Output</h2>
 <section id="define-verse." class="level3">
 <h3 class="anchored" data-anchor-id="define-verse.">Define verse.</h3>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">VERSE <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -415,11 +421,12 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">**'</span>)</span></code></pre></div>
 </details>
-<p><strong>𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑</strong></p>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑**
+</pre>
 </section>
 <section id="split-verse-into-words." class="level3">
 <h3 class="anchored" data-anchor-id="split-verse-into-words.">Split verse into words.</h3>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">words <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -438,11 +445,12 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">** words in the verse.'</span>)</span></code></pre></div>
 </details>
-<p>There are <strong>7</strong> words in the verse.</p>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span>** words in the verse.
+</pre>
 </section>
 <section id="string-together-all-the-letters-in-the-verse." class="level3">
 <h3 class="anchored" data-anchor-id="string-together-all-the-letters-in-the-verse.">String together all the letters in the verse.</h3>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">letters <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -463,11 +471,12 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">** letters in the verse.'</span>)</span></code></pre></div>
 </details>
-<p>There are <strong>28</strong> letters in the verse.</p>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">28</span>** letters in the verse.
+</pre>
 </section>
 <section id="make-a-table-with-the-letters-and-their-corresponding-values." class="level3">
 <h3 class="anchored" data-anchor-id="make-a-table-with-the-letters-and-their-corresponding-values.">Make a table with the letters and their corresponding values.</h3>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">values <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -486,7 +495,7 @@ font-style: inherit;">list</span>(forms()), listvalues()))</span></code></pre></
 <p><img src="https://latex.codecogs.com/png.latex?n_%7BL%7D"> : number of letters</p>
 <p><img src="https://latex.codecogs.com/png.latex?l_%7Bn%7D"> : letter value</p>
 <p><img src="https://latex.codecogs.com/png.latex?Q_%7BN%7D%20=%20n_%7BL%7D%20l_%7B1%7D%20l_%7B2%7D%20l_%7B3%7D%20...%20l_%7Bn%7D"></p>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">numerator <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -503,7 +512,8 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">**'</span>)</span></code></pre></div>
 </details>
-<p><strong>668860416000000000000000000000000000</strong></p>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">668860416000000000000000000000000000</span>**
+</pre>
 </section>
 <section id="calculate-the-denominator." class="level3">
 <h3 class="anchored" data-anchor-id="calculate-the-denominator.">Calculate the denominator.</h3>
@@ -511,7 +521,7 @@ font-style: inherit;">**'</span>)</span></code></pre></div>
 <p><img src="https://latex.codecogs.com/png.latex?n_%7BW%7D"> : number of words</p>
 <p><img src="https://latex.codecogs.com/png.latex?W_%7Bn%7D"> : sum of letter values of word</p>
 <p><img src="https://latex.codecogs.com/png.latex?Q_%7BD%7D%20=%20n_%7BW%7DW_%7B1%7D%20W_%7B2%7D%20W_%7B3%7D%20...%20W_%7Bn%7D"></p>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1">denominator <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -528,12 +538,13 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">**'</span>)</span></code></pre></div>
 </details>
-<p><strong>2129074680489230320</strong></p>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2129074680489230320</span>**
+</pre>
 </section>
 <section id="calculate-the-quotient-as-the-17th-power." class="level3">
 <h3 class="anchored" data-anchor-id="calculate-the-quotient-as-the-17th-power.">Calculate the quotient as the <strong>17<sup>th</sup></strong> power.</h3>
 <p><img src="https://latex.codecogs.com/png.latex?Q%20=%20%5Cfrac%7BQ_%7BN%7D%7D%7BQ_%7BD%7D%7D"></p>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1">result <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -556,11 +567,12 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">**'</span>)</span></code></pre></div>
 </details>
-<p>Q = <strong>3.1415545078310996</strong></p>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Q = **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.1415545078310996</span>**
+</pre>
 </section>
 <section id="calculate-the-percentage-of-error." class="level3">
 <h3 class="anchored" data-anchor-id="calculate-the-percentage-of-error.">Calculate the percentage of error.</h3>
-<details>
+<details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1">error <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -591,7 +603,8 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'</span>)</span></code></pre></div>
 </details>
-<p><strong>-0.0012142172108135655%</strong> ~ 3.141592653589793</p>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">-0.0012142172108135655</span>%** ~ <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.141592653589793</span>
+</pre>
 </section>
 </section>
 <section id="observations" class="level2">
@@ -626,7 +639,7 @@ font-style: inherit;">'</span>)</span></code></pre></div>
 </section>
 
 
-<div id="quarto-appendix" class="default"><aside id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>also known as <em>Biblical Hebrew</em> or <em>Old Hebrew</em>.↩︎</p></li>
@@ -635,7 +648,7 @@ font-style: inherit;">'</span>)</span></code></pre></div>
 <li id="fn4"><p>a letter is named after a spoken word representing a common object which is written as the first initial of that sound (“A” is for “Apple”)↩︎</p></li>
 <li id="fn5"><p>visible shape as it is written↩︎</p></li>
 </ol>
-</aside></div> ]]></description>
+</section></div> ]]></description>
   <guid>https://mad0perator.github.io/in-the-beginning/there-was-pi.html</guid>
   <pubDate>Fri, 24 Feb 2023 05:00:00 GMT</pubDate>
 </item>
