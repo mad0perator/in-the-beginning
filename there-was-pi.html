@@ -463,9 +463,9 @@ Note
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>VERSE <span class="op">=</span> <span class="st">'𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑'</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>VERSE<span class="sc">}</span><span class="ss">**'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(VERSE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑
 </pre>
 </section>
 <section id="split-verse-into-words." class="level3">
@@ -473,9 +473,9 @@ Note
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> VERSE.split()</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are **</span><span class="sc">{</span><span class="bu">len</span>(words)<span class="sc">}</span><span class="ss">** words in the verse.'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are </span><span class="sc">{</span><span class="bu">len</span>(words)<span class="sc">}</span><span class="ss"> words in the verse.'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span>** words in the verse.
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span> words in the verse.
 </pre>
 </section>
 <section id="string-together-all-the-letters-in-the-verse." class="level3">
@@ -483,9 +483,9 @@ Note
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>letters <span class="op">=</span> <span class="st">''</span>.join(words)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are **</span><span class="sc">{</span><span class="bu">len</span>(letters)<span class="sc">}</span><span class="ss">** letters in the verse.'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are </span><span class="sc">{</span><span class="bu">len</span>(letters)<span class="sc">}</span><span class="ss"> letters in the verse.'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">28</span>** letters in the verse.
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">28</span> letters in the verse.
 </pre>
 </section>
 <section id="make-a-table-with-the-letters-and-their-corresponding-values." class="level3">
@@ -504,9 +504,9 @@ Note
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>numerator <span class="op">=</span> letterproduct(letters)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>numerator<span class="sc">}</span><span class="ss">**'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numerator)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">668860416000000000000000000000000000</span>**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">668860416000000000000000000000000000</span>
 </pre>
 </section>
 <section id="calculate-the-denominator." class="level3">
@@ -518,9 +518,9 @@ Note
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>denominator <span class="op">=</span> wordproduct(words)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>denominator<span class="sc">}</span><span class="ss">**'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(denominator)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2129074680489230320</span>**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2129074680489230320</span>
 </pre>
 </section>
 <section id="calculate-the-quotient-as-the-17th-power." class="level3">
@@ -529,9 +529,9 @@ Note
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> numerator <span class="op">/</span> denominator <span class="op">/</span> <span class="fl">1E17</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Q = **</span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">**'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Q = </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Q = **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.1415545078310996</span>**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Q = <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.1415545078310996</span>
 </pre>
 </section>
 <section id="calculate-the-percentage-of-error." class="level3">
@@ -539,9 +539,9 @@ Note
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> (result <span class="op">-</span> pi) <span class="op">*</span> <span class="dv">100</span> <span class="op">/</span> pi</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>error<span class="sc">}</span><span class="ss">%** ~ </span><span class="sc">{</span>pi<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>error<span class="sc">}</span><span class="ss">% ~ </span><span class="sc">{</span>pi<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">-0.0012142172108135655</span>%** ~ <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.141592653589793</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">-0.0012142172108135655</span>% ~ <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.141592653589793</span>
 </pre>
 </section>
 </section>
@@ -1378,21 +1378,21 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb10-191"><a href="#cb10-191" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-194"><a href="#cb10-194" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb10-195"><a href="#cb10-195" aria-hidden="true" tabindex="-1"></a>VERSE <span class="op">=</span> <span class="st">'𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑'</span></span>
-<span id="cb10-196"><a href="#cb10-196" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>VERSE<span class="sc">}</span><span class="ss">**'</span>)</span>
+<span id="cb10-196"><a href="#cb10-196" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(VERSE)</span>
 <span id="cb10-197"><a href="#cb10-197" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-198"><a href="#cb10-198" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-199"><a href="#cb10-199" aria-hidden="true" tabindex="-1"></a><span class="fu">### Split verse into words.</span></span>
 <span id="cb10-200"><a href="#cb10-200" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-203"><a href="#cb10-203" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb10-204"><a href="#cb10-204" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> VERSE.split()</span>
-<span id="cb10-205"><a href="#cb10-205" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are **</span><span class="sc">{</span><span class="bu">len</span>(words)<span class="sc">}</span><span class="ss">** words in the verse.'</span>)</span>
+<span id="cb10-205"><a href="#cb10-205" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are </span><span class="sc">{</span><span class="bu">len</span>(words)<span class="sc">}</span><span class="ss"> words in the verse.'</span>)</span>
 <span id="cb10-206"><a href="#cb10-206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-207"><a href="#cb10-207" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-208"><a href="#cb10-208" aria-hidden="true" tabindex="-1"></a><span class="fu">### String together all the letters in the verse.</span></span>
 <span id="cb10-209"><a href="#cb10-209" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-212"><a href="#cb10-212" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb10-213"><a href="#cb10-213" aria-hidden="true" tabindex="-1"></a>letters <span class="op">=</span> <span class="st">''</span>.join(words)</span>
-<span id="cb10-214"><a href="#cb10-214" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are **</span><span class="sc">{</span><span class="bu">len</span>(letters)<span class="sc">}</span><span class="ss">** letters in the verse.'</span>)</span>
+<span id="cb10-214"><a href="#cb10-214" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'There are </span><span class="sc">{</span><span class="bu">len</span>(letters)<span class="sc">}</span><span class="ss"> letters in the verse.'</span>)</span>
 <span id="cb10-215"><a href="#cb10-215" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-216"><a href="#cb10-216" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-217"><a href="#cb10-217" aria-hidden="true" tabindex="-1"></a><span class="fu">### Make a table with the letters and their corresponding values.</span></span>
@@ -1413,7 +1413,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb10-234"><a href="#cb10-234" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-237"><a href="#cb10-237" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb10-238"><a href="#cb10-238" aria-hidden="true" tabindex="-1"></a>numerator <span class="op">=</span> letterproduct(letters)</span>
-<span id="cb10-239"><a href="#cb10-239" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>numerator<span class="sc">}</span><span class="ss">**'</span>)</span>
+<span id="cb10-239"><a href="#cb10-239" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(numerator)</span>
 <span id="cb10-240"><a href="#cb10-240" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-241"><a href="#cb10-241" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-242"><a href="#cb10-242" aria-hidden="true" tabindex="-1"></a><span class="fu">### Calculate the denominator.</span></span>
@@ -1428,7 +1428,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb10-251"><a href="#cb10-251" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-254"><a href="#cb10-254" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb10-255"><a href="#cb10-255" aria-hidden="true" tabindex="-1"></a>denominator <span class="op">=</span> wordproduct(words)</span>
-<span id="cb10-256"><a href="#cb10-256" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>denominator<span class="sc">}</span><span class="ss">**'</span>)</span>
+<span id="cb10-256"><a href="#cb10-256" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(denominator)</span>
 <span id="cb10-257"><a href="#cb10-257" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-258"><a href="#cb10-258" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-259"><a href="#cb10-259" aria-hidden="true" tabindex="-1"></a><span class="fu">### Calculate the quotient as the **17^th^** power.</span></span>
@@ -1437,14 +1437,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb10-262"><a href="#cb10-262" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-265"><a href="#cb10-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb10-266"><a href="#cb10-266" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> numerator <span class="op">/</span> denominator <span class="op">/</span> <span class="fl">1E17</span></span>
-<span id="cb10-267"><a href="#cb10-267" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Q = **</span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">**'</span>)</span>
+<span id="cb10-267"><a href="#cb10-267" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Q = </span><span class="sc">{</span>result<span class="sc">}</span><span class="ss">'</span>)</span>
 <span id="cb10-268"><a href="#cb10-268" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-269"><a href="#cb10-269" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-270"><a href="#cb10-270" aria-hidden="true" tabindex="-1"></a><span class="fu">### Calculate the percentage of error.</span></span>
 <span id="cb10-271"><a href="#cb10-271" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-274"><a href="#cb10-274" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
 <span id="cb10-275"><a href="#cb10-275" aria-hidden="true" tabindex="-1"></a>error <span class="op">=</span> (result <span class="op">-</span> pi) <span class="op">*</span> <span class="dv">100</span> <span class="op">/</span> pi</span>
-<span id="cb10-276"><a href="#cb10-276" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'**</span><span class="sc">{</span>error<span class="sc">}</span><span class="ss">%** ~ </span><span class="sc">{</span>pi<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb10-276"><a href="#cb10-276" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>error<span class="sc">}</span><span class="ss">% ~ </span><span class="sc">{</span>pi<span class="sc">}</span><span class="ss">'</span>)</span>
 <span id="cb10-277"><a href="#cb10-277" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb10-278"><a href="#cb10-278" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-279"><a href="#cb10-279" aria-hidden="true" tabindex="-1"></a><span class="fu">## Observations</span></span>

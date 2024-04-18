@@ -411,17 +411,9 @@ background-color: null;
 font-style: inherit;">'𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑'</span></span>
 <span id="cb2-2"><span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>VERSE<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">**'</span>)</span></code></pre></div>
+font-style: inherit;">print</span>(VERSE)</span></code></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">𐤁𐤓𐤀𐤔𐤉𐤕 𐤁𐤓𐤀 𐤀𐤋𐤄𐤉𐤌 𐤀𐤕 𐤄𐤔𐤌𐤉𐤌 𐤅𐤀𐤕 𐤄𐤀𐤓𐤑
 </pre>
 </section>
 <section id="split-verse-into-words." class="level3">
@@ -435,7 +427,7 @@ font-style: inherit;">=</span> VERSE.split()</span>
 background-color: null;
 font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">f'There are **</span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">f'There are </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span><span class="bu" style="color: null;
 background-color: null;
@@ -443,9 +435,9 @@ font-style: inherit;">len</span>(words)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">** words in the verse.'</span>)</span></code></pre></div>
+font-style: inherit;"> words in the verse.'</span>)</span></code></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span>** words in the verse.
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">7</span> words in the verse.
 </pre>
 </section>
 <section id="string-together-all-the-letters-in-the-verse." class="level3">
@@ -461,7 +453,7 @@ font-style: inherit;">''</span>.join(words)</span>
 background-color: null;
 font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">f'There are **</span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">f'There are </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span><span class="bu" style="color: null;
 background-color: null;
@@ -469,9 +461,9 @@ font-style: inherit;">len</span>(letters)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">** letters in the verse.'</span>)</span></code></pre></div>
+font-style: inherit;"> letters in the verse.'</span>)</span></code></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">28</span>** letters in the verse.
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">There are <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">28</span> letters in the verse.
 </pre>
 </section>
 <section id="make-a-table-with-the-letters-and-their-corresponding-values." class="level3">
@@ -502,17 +494,9 @@ background-color: null;
 font-style: inherit;">=</span> letterproduct(letters)</span>
 <span id="cb6-2"><span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>numerator<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">**'</span>)</span></code></pre></div>
+font-style: inherit;">print</span>(numerator)</span></code></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">668860416000000000000000000000000000</span>**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">668860416000000000000000000000000000</span>
 </pre>
 </section>
 <section id="calculate-the-denominator." class="level3">
@@ -528,17 +512,9 @@ background-color: null;
 font-style: inherit;">=</span> wordproduct(words)</span>
 <span id="cb7-2"><span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>denominator<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">**'</span>)</span></code></pre></div>
+font-style: inherit;">print</span>(denominator)</span></code></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2129074680489230320</span>**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">2129074680489230320</span>
 </pre>
 </section>
 <section id="calculate-the-quotient-as-the-17th-power." class="level3">
@@ -559,15 +535,15 @@ font-style: inherit;">1E17</span></span>
 background-color: null;
 font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">f'Q = **</span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">f'Q = </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span>result<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">**'</span>)</span></code></pre></div>
+font-style: inherit;">'</span>)</span></code></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Q = **<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.1415545078310996</span>**
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">Q = <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.1415545078310996</span>
 </pre>
 </section>
 <section id="calculate-the-percentage-of-error." class="level3">
@@ -589,13 +565,13 @@ font-style: inherit;">/</span> pi</span>
 background-color: null;
 font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">f'**</span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">f'</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span>error<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">%** ~ </span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">% ~ </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span>pi<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -603,7 +579,7 @@ font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'</span>)</span></code></pre></div>
 </details>
-<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">**<span style="color: #008080; text-decoration-color: #008080; font-weight: bold">-0.0012142172108135655</span>%** ~ <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.141592653589793</span>
+<pre style="white-space:pre;overflow-x:auto;line-height:normal;font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #008080; text-decoration-color: #008080; font-weight: bold">-0.0012142172108135655</span>% ~ <span style="color: #008080; text-decoration-color: #008080; font-weight: bold">3.141592653589793</span>
 </pre>
 </section>
 </section>
