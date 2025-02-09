@@ -1,7 +1,4 @@
-# environment.yml
-#
-#   Mamba Environment Definition
-#
+# environment.yml -- Local Mamba Environment Definition
 channels:
   - conda-forge
 dependencies:
